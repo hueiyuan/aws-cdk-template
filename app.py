@@ -2,10 +2,10 @@
 import os
 
 import aws_cdk as cdk
-from cdks.cdk_alb_stack import CdkALBStack
-from cdks.cdk_msk_stack import CdkMSKStack
-from cdks.cdk_redshift_stack import CdkRedshiftStack
-from cdks.cdk_eventbridge_stack import CdkEventBridgeStack
+from cdks.alb_stack import CdkALBStack
+from cdks.msk_stack import CdkMSKStack
+from cdks.redshift_stack import CdkRedshiftStack
+from cdks.eventbridge_stack import CdkEventBridgeStack
 
 from configs.general_config import GeneralConfig
 
