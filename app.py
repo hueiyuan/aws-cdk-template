@@ -36,7 +36,7 @@ cdk_msk_stack = CdkMSKStack(
         file_assets_bucket_name=general_conf.bootstrap_bucket
     )
 )
-tagging_func(cdk_msk_stack, name=f'cdk-etl-msk-{env}', env=env)
+tagging_func(cdk_msk_stack, name=f'cdk-msk-{env}', env=env)
 
 cdk_redshift_stack = CdkRedshiftStack(
     app, 
