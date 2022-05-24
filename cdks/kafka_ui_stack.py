@@ -22,9 +22,9 @@ class CdkKafkaUIStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, environment:str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
         
-        kafka_ui_service_name = f'etl-kafka-ui-{environment}'
-        kafka_ui_instance_name = f'etl-kafka-ui-instance-{environment}'
-        kafka_ui_target_group_name = f'etl-kafka-ui-target-group-{environment}'
+        kafka_ui_service_name = f'kafka-ui-{environment}'
+        kafka_ui_instance_name = f'kafka-ui-instance-{environment}'
+        kafka_ui_target_group_name = f'kafka-ui-target-group-{environment}'
         kafka_ui_dns = f'kafka-ui-{environment}.com'
         
         kafka_ui_iam_role = iam.CfnRole(self, f'KafkaUIRole-{environment}',
